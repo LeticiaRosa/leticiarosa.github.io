@@ -10,7 +10,7 @@ export function Menu() {
   return (
     <div className="relative">
       <button 
-        className="md:hidden p-4 z-50 relative" 
+        className="md:hidden p-2 z-50 relative" 
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
@@ -31,12 +31,12 @@ export function Menu() {
       </div>
       
       {/* Desktop menu */}
-      <div className="hidden md:flex">
-        <a href="" className="p-2 button-link text-xs md:text-md lg:text-m lg:p-4">HOME</a>
-        <a href="" className="p-2 button-link text-xs md:text-md lg:text-m lg:p-4">ABOUT</a>
-        <a href="" className="p-2 button-link text-xs md:text-md lg:text-m lg:p-4">PROJECTS</a>
-        <a href="" className="p-2 button-link text-xs md:text-md lg:text-m lg:p-4">SKILLS</a>
-        <a href="" className="p-2 button-link text-xs md:text-md lg:text-m lg:p-4">CONTACT</a>
+      <div className="hidden md:flex gap-4">
+        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">HOME</a>
+        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">ABOUT</a>
+        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">PROJECTS</a>
+        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">SKILLS</a>
+        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">CONTACT</a>
       </div>
     </div>
   );

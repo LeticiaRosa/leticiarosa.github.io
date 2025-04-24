@@ -3,16 +3,15 @@ import { Menu } from "./Menu";
 
 export function Header() {
   return (
-    <div className="flex justify-center items-center bg-purple text-white w-full h-80 p-2">
-      <div className="flex flex-col justify-center items-start">
+    <div className="flex justify-center items-start bg-purple text-white w-full h-80 p-4">
+      <div className="flex flex-col justify-center items-start gap-4">
         <Menu/>
-        <div className="py-10 gap-4 flex flex-col items-start">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl p-4">
-            Hello, I'm a 
-            <br/>
-            <span className="whitespace-nowrap">Front-End Developer</span>
+        <div className="flex flex-col items-start justify-center gap-4 p-4">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl">
+              <span className="whitespace-nowrap">Hello, I'm a </span> <br/>
+              Front-End <br/> Developer
             </h1>
-          <button className="button-primary">VIEW MY WORK</button>
+            <button className="button-primary text-s">VIEW MY WORK</button>
         </div>
       </div>
       <div className="max-[300px]:hidden flex justify-center items-center h-full ">
