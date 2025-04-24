@@ -1,0 +1,50 @@
+@theme {
+  --font-Roboto: "Nunito", sans-serif;
+  --font-Baloo: Baloo2, sans-serif;
+  /* === COLORS === */
+
+  /* Pink & Purple Palette */
+  --color-purple-pink-dark: #A500D4;
+  --color-purple-pink: #CD1FFF;
+  --color-pink: #F9A0FF;
+  --color-pink-light: #F5D0F8;
+  --color-purple-dark: #4B2995;
+  --color-purple: #8047F8;
+  --color-purple-light: #EBE5F9;
+
+  /* Neutral Palette */
+  --color-white: #FFFFFF;
+  --color-background: #FAFAFA;
+  --color-base-card: #F3F2F2;
+  --color-base-hover: #D7D5D5;
+  --color-base-label: #8D8686;
+
+  /* Dark Theme Palette */
+  --color-background-dark: #272221;
+  --color-base-card-dark: #574F4D;
+
+  /* === TYPOGRAPHY === */
+
+  /* Title Sizes */
+  --title-xl: 48px;
+  --title-l: 32px;
+  --title-m: 24px;
+  --title-s: 20px;
+  --title-xs: 18px;
+
+  /* Text Sizes */
+  --text-l: 20px;
+  --text-m: 16px;
+  --text-s: 14px;
+  --text-xs: 12px;
+
+  /* === SPACING === */
+  --spacing-xxl: 32px;
+  --spacing-xl: 24px;
+  --spacing-l: 20px;
+  --spacing-m: 16px;
+  --spacing-s: 12px;
+  --spacing-xs: 8px;
+
+ 
+}

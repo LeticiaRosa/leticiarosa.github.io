@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import './variables.css';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-Roboto);
+  background: var(--color-background);
+
+  margin: 0;
+  padding: 0;
+  color: var(--color-base-label);
+  font-size: var(--text-m);
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* === DARK THEME OVERRIDES === */
+.dark {
+  --color-background: var(--color-background-dark);
+  --color-base-card: var(--color-base-card-dark);
+}
+
+/* === UTILITY CLASSES === */
+.bg-app {
+  background-color: var(--color-background);
+}
+.bg-app-dark {
+  background-color: var(--color-background-dark);
+}
+
+.text-primary {
+  color: var(--color-purple);
+}
+.text-secondary {
+  color: var(--color-pink);
+}
+
+.font-title-xl {
+  font-size: var(--title-xl);
+}
+.font-title-l {
+  font-size: var(--title-l);
+}
+.font-title-m {
+  font-size: var(--title-m);
+}
+.font-title-s {
+  font-size: var(--title-s);
+}
+.font-title-xs {
+  font-size: var(--title-xs);
+}
+
+.font-text-l {
+  font-size: var(--text-l);
+}
+.font-text-m {
+  font-size: var(--text-m);
+}
+.font-text-s {
+  font-size: var(--text-s);
+}
+.font-text-xs {
+  font-size: var(--text-xs);
+}
+
+.font-roboto {
+  font-family: var(--font-Roboto);
+}
+.font-baloo {
+  font-family: var(--font-Baloo);
+}
+
+.mt-spacing-s {
+  margin-top: var(--spacing-s);
+}
+.p-spacing-m {
+  padding: var(--spacing-m);
+}
+
+.button-primary {
+  background-color: var(--color-purple-pink);
+  color: var(--color-white);
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: 8px;
+  font-size: var(--text-m);
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-primary:hover {
+  background-color: var(--color-purple-pink-dark);
+  transition: background-color 0.3s ease;
+  
+}
+.button-secondary {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: 8px;
+  font-size: var(--text-m);
+  font-weight: bold;
+}
+.button-secondary:hover {
+  background-color: var(--color-pink-light);
+}
+.button-outline {
+  background-color: transparent;
+  color: var(--color-purple);
+  padding: var(--spacing-s) var(--spacing-m);
+  border: 2px solid var(--color-purple);
+  border-radius: 8px;
+  font-size: var(--text-m);
+  font-weight: bold;
+}
+.button-outline:hover {
+  background-color: var(--color-purple-light);
+}
+.button-link {
+  background-color: transparent;
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: 8px;
+  font-size: var(--text-m);
+}
+.button-link:hover {
+  color: var(--color-purple-light);
+}
+
