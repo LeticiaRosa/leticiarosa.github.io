@@ -1,27 +1,27 @@
 @theme {
-  --font-Roboto: "Nunito", sans-serif;
+  --font-Roboto: 'Nunito', sans-serif;
   --font-Baloo: Baloo2, sans-serif;
   /* === COLORS === */
 
   /* Pink & Purple Palette */
-  --color-purple-pink-dark: #A500D4;
-  --color-purple-pink: #CD1FFF;
-  --color-pink: #F9A0FF;
-  --color-pink-light: #F5D0F8;
-  --color-purple-dark: #4B2995;
-  --color-purple: #8047F8;
-  --color-purple-light: #EBE5F9;
+  --color-purple-pink-dark: #a500d4;
+  --color-purple-pink: #cd1fff;
+  --color-pink: #f9a0ff;
+  --color-pink-light: #f5d0f8;
+  --color-purple-dark: #4b2995;
+  --color-purple: #8047f8;
+  --color-purple-light: #ebe5f9;
 
   /* Neutral Palette */
-  --color-white: #FFFFFF;
-  --color-background: #FAFAFA;
-  --color-base-card: #F3F2F2;
-  --color-base-hover: #D7D5D5;
-  --color-base-label: #8D8686;
+  --color-white: #ffffff;
+  --color-background: #fafafa;
+  --color-base-card: #f3f2f2;
+  --color-base-hover: #d7d5d5;
+  --color-base-label: #8d8686;
 
   /* Dark Theme Palette */
   --color-background-dark: #272221;
-  --color-base-card-dark: #574F4D;
+  --color-base-card-dark: #574f4d;
 
   /* === TYPOGRAPHY === */
 
@@ -45,6 +45,4 @@
   --spacing-m: 16px;
   --spacing-s: 12px;
   --spacing-xs: 8px;
-
- 
 }

@@ -9,34 +9,50 @@ export function Menu() {
 
   return (
     <div className="relative">
-      <button 
-        className="md:hidden p-2 z-50 relative" 
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
-        <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${isOpen ? 'opacity-0' : ''}`}></div>
-        <div className={`w-6 h-0.5 bg-white transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
+      <button className="relative z-50 p-2 md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
+        <div className={`mb-1.5 h-0.5 w-6 bg-white transition-all ${isOpen ? 'translate-y-2 rotate-45' : ''}`}></div>
+        <div className={`mb-1.5 h-0.5 w-6 bg-white transition-all ${isOpen ? 'opacity-0' : ''}`}></div>
+        <div className={`h-0.5 w-6 bg-white transition-all ${isOpen ? '-translate-y-2 -rotate-45' : ''}`}></div>
       </button>
-      
+
       {/* Mobile menu */}
-      <div className={`md:hidden fixed inset-0 bg-purple z-40 transition-all duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <div className="flex flex-col items-center justify-center h-full">
-          <a href="" className="p-4 button-link text-lg my-2" onClick={toggleMenu}>HOME</a>
-          <a href="" className="p-4 button-link text-lg my-2" onClick={toggleMenu}>ABOUT</a>
-          <a href="" className="p-4 button-link text-lg my-2" onClick={toggleMenu}>PROJECTS</a>
-          <a href="" className="p-4 button-link text-lg my-2" onClick={toggleMenu}>SKILLS</a>
-          <a href="" className="p-4 button-link text-lg my-2" onClick={toggleMenu}>CONTACT</a>
+      <div className={`bg-purple fixed inset-0 z-40 transition-all duration-300 md:hidden ${isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}`}>
+        <div className="flex h-full flex-col items-center justify-center">
+          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+            HOME
+          </a>
+          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+            ABOUT
+          </a>
+          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+            PROJECTS
+          </a>
+          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+            SKILLS
+          </a>
+          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+            CONTACT
+          </a>
         </div>
       </div>
-      
+
       {/* Desktop menu */}
-      <div className="hidden md:flex gap-4">
-        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">HOME</a>
-        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">ABOUT</a>
-        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">PROJECTS</a>
-        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">SKILLS</a>
-        <a href="" className="py-2 button-link text-xs md:text-md lg:text-m lg:py-4">CONTACT</a>
+      <div className="hidden gap-4 md:flex">
+        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+          HOME
+        </a>
+        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+          ABOUT
+        </a>
+        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+          PROJECTS
+        </a>
+        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+          SKILLS
+        </a>
+        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+          CONTACT
+        </a>
       </div>
     </div>
   );

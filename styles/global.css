@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @import './variables.css';
 
 body {
@@ -6,7 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-Roboto);
   background: var(--color-background);
-
   margin: 0;
   padding: 0;
   color: var(--color-base-label);
@@ -22,7 +21,7 @@ body {
 }
 
 .button-primary {
-  @apply bg-purple-pink text-white rounded-2xl font-bold cursor-pointer p-4;
+  @apply bg-purple-pink cursor-pointer rounded-2xl p-4 font-bold text-white;
 }
 
 .button-primary:hover {
@@ -30,7 +29,7 @@ body {
 }
 
 .button-secondary {
-  @apply bg-pink text-white rounded-2xl font-bold cursor-pointer p-4;
+  @apply bg-pink cursor-pointer rounded-2xl p-4 font-bold text-white;
 }
 
 .button-secondary:hover {
@@ -38,7 +37,7 @@ body {
 }
 
 .button-outline {
-  @apply bg-transparent text-purple rounded-2xl font-bold cursor-pointer p-4 border-2 border-purple;
+  @apply text-purple border-purple cursor-pointer rounded-2xl border-2 bg-transparent p-4 font-bold;
 }
 
 .button-outline:hover {
@@ -46,7 +45,7 @@ body {
 }
 
 .button-link {
-  @apply bg-transparent text-white cursor-pointer border-2 border-transparent;
+  @apply cursor-pointer border-2 border-transparent bg-transparent text-white;
 }
 
 .button-link:hover {
@@ -54,7 +53,7 @@ body {
 }
 
 .button-link-secondary {
-  @apply bg-transparent text-black cursor-pointer border-2 border-transparent;
+  @apply cursor-pointer border-2 border-transparent bg-transparent text-black;
 }
 
 .button-link-secondary:hover {
