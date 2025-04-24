@@ -3,10 +3,10 @@ import { Menu } from "./Menu";
 
 export function Header() {
   return (
-    <div className="flex justify-center items-start bg-purple text-white w-full h-80 p-4">
-      <div className="flex flex-col justify-center items-start gap-4">
+    <div className="flex justify-center items-start bg-purple text-white w-full h-80 p-4 lg:p-2">
+      <div className="flex flex-col justify-center items-start gap-4 lg:gap-2">
         <Menu/>
-        <div className="flex flex-col items-start justify-center gap-4 p-4">
+        <div className="flex flex-col items-start justify-center gap-6 p-4 lg:p-2">
             <h1 className="text-4xl md:text-4xl lg:text-5xl">
               <span className="whitespace-nowrap">Hello, I'm a </span> <br/>
               Front-End <br/> Developer
