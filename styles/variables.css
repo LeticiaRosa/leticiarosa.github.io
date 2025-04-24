@@ -26,11 +26,11 @@
   /* === TYPOGRAPHY === */
 
   /* Title Sizes */
-  --title-xl: 48px;
-  --title-l: 32px;
-  --title-m: 24px;
-  --title-s: 20px;
-  --title-xs: 18px;
+  --text-title-xl: 48px;
+  --text-title-l: 32px;
+  --text-title-m: 24px;
+  --text-title-s: 20px;
+  --text-title-xs: 18px;
 
   /* Text Sizes */
   --text-l: 20px;
@@ -39,7 +39,7 @@
   --text-xs: 12px;
 
   /* === SPACING === */
-  --spacing-xxl: 32px;
+  --p-spacing-xxl: 32px;
   --spacing-xl: 24px;
   --spacing-l: 20px;
   --spacing-m: 16px;
