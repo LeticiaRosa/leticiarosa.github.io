@@ -26,7 +26,7 @@ export function Footer() {
   };
   return (
     <footer className="bg-purple mt-auto w-full py-4 text-white">
-      <div className="container mx-auto flex items-center justify-between px-4">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:gap-0">
         <div>
           <span className="whitespace-nowrap">TODOS OS DIREITOS RESERVADOS.</span>
         </div>
