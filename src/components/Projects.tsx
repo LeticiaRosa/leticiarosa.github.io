@@ -9,7 +9,13 @@ export function Projects() {
         </div>
         <div className="flex flex-col items-start justify-center gap-4 p-4 lg:p-2">
           <p className="text-s md:text-m text-black">Here are some of my projects:</p>
-          <CardProjects />
+          <div className="flex flex-row flex-wrap items-center justify-center gap-4 p-4 lg:p-2">
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+          </div>
         </div>
       </div>
     </section>
