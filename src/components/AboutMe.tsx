@@ -1,8 +1,16 @@
+import { useEffect } from 'react';
 import imgMe from '../../public/images/ME.png';
+import { Observer } from 'tailwindcss-intersect';
+
+Observer.start();
 export function AboutMe() {
+  useEffect(() => {
+    Observer.start();
+  }, []);
+
   return (
     <section className="bg-purple-light container-section">
-      <div className="container">
+      <div className="intersect:animate-fade-right container">
         <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
           <img src={imgMe} alt="My Image" className="max-h-50 max-w-full rounded-full object-contain" />
           <div className="flex flex-col items-start justify-center gap-6">

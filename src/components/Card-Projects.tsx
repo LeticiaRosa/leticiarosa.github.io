@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+import { Button } from './Button';
+import { Observer } from 'tailwindcss-intersect';
+
 interface CardProjectsProps {
   title: string;
   description: string;
@@ -6,8 +10,11 @@ interface CardProjectsProps {
 }
 
 export function CardProjects({ title, description, imageUrl, siteUrl }: CardProjectsProps) {
+  useEffect(() => {
+    Observer.start();
+  }, []);
   return (
-    <div className="flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl">
+    <div className="intersect:animate-fade-down flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl">
       <img src={imageUrl} alt={title} className="h-30 w-full rounded-t-xl object-scale-down" />
       <div className="flex flex-grow flex-col justify-between p-6 pt-0">
         <div>
@@ -15,9 +22,7 @@ export function CardProjects({ title, description, imageUrl, siteUrl }: CardProj
           <p className="mt-2 text-gray-600">{description}</p>
         </div>
         <div className="mt-6 pt-2">
-          <button onClick={() => window.open(siteUrl, '_blank')} className="inline-block cursor-pointer rounded-lg bg-purple-600 px-6 py-2 text-white transition hover:bg-purple-700">
-            View Project
-          </button>
+          <Button onClick={() => window.open(siteUrl, '_blank')} text="View Project" variants="secondary" />
         </div>
       </div>
     </div>
