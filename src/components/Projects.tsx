@@ -3,14 +3,14 @@ import { CardProjects } from './Card-Projects';
 export function Projects() {
   const projects = [
     {
-      title: 'Sistema de Agendamento de Serviços – Marca Aí',
-      description: `Plataforma de agendamento de serviços desenvolvida do zero com foco em usabilidade e performance.`,
+      title: 'Service Scheduling System – Marca Aí',
+      description: `Service scheduling platform developed from scratch with a focus on usability and performance.`,
       imageUrl: '/images/marcaai.png',
       siteUrl: 'https://marcaai-frontend-hm.appmarcaai.com.br',
     },
     {
-      title: 'Site de Casamento - Letícia e Gabriel',
-      description: 'Desenvolvi uma aplicação para o meu casamento, permitindo aos convidados realizar contribuições via Pix, crédito, boleto e débito.',
+      title: 'Wedding Website - Leticia and Gabriel',
+      description: 'I developed an application for my wedding, allowing guests to make contributions via Pix, credit, boleto and debit.',
       imageUrl: '/images/casamento.png',
       siteUrl: 'https://leticia-gabriel.netlify.app/',
     },
@@ -20,7 +20,9 @@ export function Projects() {
     <section className="flex h-full w-full flex-row items-center justify-center pt-8">
       <div className="container mx-auto max-w-250 px-4">
         <div className="flex flex-row items-center justify-between gap-2">
-          <h1 className="text-purple-dark px-8 text-3xl font-bold lg:text-5xl">Projects</h1>
+          <h1 className="text-purple-dark px-8 text-3xl font-bold lg:text-5xl" id="projects">
+            Projects
+          </h1>
         </div>
         <div className="items-cente flex flex-col justify-center gap-4 p-4 lg:p-2">
           <p className="text-s md:text-m px-4 text-black">Here are some of my projects:</p>

@@ -18,19 +18,19 @@ export function Menu() {
       {/* Mobile menu */}
       <div className={`bg-purple fixed inset-0 z-40 transition-all duration-300 md:hidden ${isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}`}>
         <div className="flex h-full flex-col items-center justify-center">
-          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+          <a href="#home" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
             HOME
           </a>
-          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+          <a href="#about" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
             ABOUT
           </a>
-          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+          <a href="#projects" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
             PROJECTS
           </a>
-          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+          <a href="#skills" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
             SKILLS
           </a>
-          <a href="" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
+          <a href="#contact" className="button-link my-2 p-4 text-lg" onClick={toggleMenu}>
             CONTACT
           </a>
         </div>
@@ -38,19 +38,19 @@ export function Menu() {
 
       {/* Desktop menu */}
       <div className="hidden gap-4 md:flex">
-        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+        <a href="#home" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
           HOME
         </a>
-        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+        <a href="#about" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
           ABOUT
         </a>
-        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+        <a href="#projects" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
           PROJECTS
         </a>
-        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+        <a href="#skills" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
           SKILLS
         </a>
-        <a href="" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
+        <a href="#contact" className="button-link md:text-md lg:text-m py-2 text-xs lg:py-4">
           CONTACT
         </a>
       </div>

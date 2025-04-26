@@ -3,9 +3,11 @@ export function Skills() {
     <section className="bg-purple flex h-full w-full flex-row items-center justify-center pt-8">
       <div className="container mx-auto max-w-250 px-4">
         <div className="flex flex-row items-center justify-between gap-2">
-          <h1 className="px-8 text-3xl font-bold text-white lg:text-5xl">Skills</h1>
+          <h1 className="px-8 text-3xl font-bold text-white lg:text-5xl" id="skills">
+            Skills
+          </h1>
         </div>
-        <div className="flex flex-row items-start justify-center gap-8">
+        <div className="flex flex-row flex-wrap items-start justify-center gap-8">
           <div className="items-cente flex flex-col justify-center p-4 lg:p-2">
             <p className="text-s md:text-m font-bold text-white">Front-End:</p>
             <li className="text-s md:text-m px-4 text-white">HTML5</li>

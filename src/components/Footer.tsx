@@ -25,10 +25,10 @@ export function Footer() {
     window.open(url, '_blank');
   };
   return (
-    <footer className="bg-purple mt-auto w-full py-4 text-white">
+    <footer className="text-purple mt-auto w-full bg-white py-4">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:gap-0">
         <div>
-          <span className="whitespace-nowrap">TODOS OS DIREITOS RESERVADOS.</span>
+          <span className="font-bold whitespace-nowrap">TODOS OS DIREITOS RESERVADOS.</span>
         </div>
         <div className="flex gap-2">
           <LinkedinLogo className="cursor-pointer" size={32} onClick={() => handleSocialMediaClick('linkedin')} />

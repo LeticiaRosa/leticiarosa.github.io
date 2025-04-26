@@ -10,7 +10,10 @@ export function Header() {
             <Menu />
             <div className="flex flex-col items-start justify-center gap-6 p-4 lg:p-2">
               <h1 className="text-3xl lg:text-5xl">
-                <span className="whitespace-nowrap">Hello, I'm a </span> <br />
+                <span id="home" className="whitespace-nowrap">
+                  Hello, I'm a{' '}
+                </span>{' '}
+                <br />
                 Front-End <br /> Developer
               </h1>
               <button className="button-primary text-s whitespace-nowrap">VIEW MY WORK</button>
