@@ -1,4 +1,18 @@
 export function Skills() {
+  const skills = [
+    {
+      title: 'Front-End:',
+      items: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'TypeScript', 'Tailwind CSS', 'Styled-Components', 'Next.js'],
+    },
+    {
+      title: 'Tools:',
+      items: ['Git', 'GitHub', 'GitLab', 'VS Code', 'Figma', 'Vite', 'Canva'],
+    },
+    {
+      title: 'Soft Skills:',
+      items: ['Comunicação', 'Trabalho em equipe', 'Proatividade', 'Organização', 'Aprendizado contínuo'],
+    },
+  ];
   return (
     <section className="container-section bg-purple">
       <div className="container">
@@ -9,33 +23,18 @@ export function Skills() {
         </div>
         <div className="grid grid-cols-1 items-start justify-center gap-8 sm:grid-cols-3">
           <div className="text-s md:text-m p-4 text-white lg:p-2">
-            <p className="font-bold">Front-End:</p>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-            <li>Styled-Components</li>
-            <li>Next.js</li>
-          </div>
-          <div className="text-s md:text-m p-4 text-white lg:p-2">
-            <p className="font-bold">Tools: </p>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>GitLab</li>
-            <li>VS Code</li>
-            <li>Figma</li>
-            <li>Vite</li>
-            <li>Canva</li>
-          </div>
-          <div className="text-s md:text-m p-4 text-white lg:p-2">
-            <p className="font-bold">Soft Skills: </p>
-            <li>Comunicação</li>
-            <li>Trabalho em equipe</li>
-            <li>Proatividade</li>
-            <li>Organização</li>
-            <li>Aprendizado contínuo</li>
+            {skills.map((skill, index) => {
+              return (
+                <div key={index} className="mb-4">
+                  <p className="font-bold">{skill.title}</p>
+                  <ul className="list-disc pl-5">
+                    {skill.items.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
