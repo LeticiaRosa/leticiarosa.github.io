@@ -1,7 +1,7 @@
 export function Skills() {
   return (
-    <section className="bg-purple flex h-full w-full flex-row items-center justify-center pt-8">
-      <div className="container mx-auto max-w-250 px-4">
+    <section className="container-section bg-purple">
+      <div className="container">
         <div className="flex flex-row items-center justify-between gap-2">
           <h1 className="px-8 text-3xl font-bold text-white lg:text-5xl" id="skills">
             Skills

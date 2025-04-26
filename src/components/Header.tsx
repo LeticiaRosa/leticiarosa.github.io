@@ -3,8 +3,8 @@ import { Menu } from './Menu';
 
 export function Header() {
   return (
-    <div className="bg-purple flex h-70 items-start justify-center p-4 text-white md:h-80 lg:p-2">
-      <div className="container mx-auto max-w-250 px-4">
+    <div className="container-section bg-purple h-70 text-white md:h-80">
+      <div className="container">
         <div className="flex flex-row">
           <div>
             <Menu />

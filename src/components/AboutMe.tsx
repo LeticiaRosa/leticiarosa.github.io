@@ -1,8 +1,8 @@
 import imgMe from '../../public/images/ME.png';
 export function AboutMe() {
   return (
-    <section className="bg-purple-light flex h-full w-full flex-row items-center justify-center p-4 lg:p-2">
-      <div className="container mx-auto max-w-250 px-4">
+    <section className="bg-purple-light container-section">
+      <div className="container">
         <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
           <img src={imgMe} alt="My Image" className="max-h-50 max-w-full rounded-full object-contain" />
           <div className="flex flex-col items-start justify-center gap-6 p-4">

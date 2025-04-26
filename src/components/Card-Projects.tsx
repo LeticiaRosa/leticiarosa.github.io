@@ -7,14 +7,19 @@ interface CardProjectsProps {
 
 export function CardProjects({ title, description, imageUrl, siteUrl }: CardProjectsProps) {
   return (
-    <div onClick={() => window.open(siteUrl, '_blank')} className="bg-purple-light flex h-80 w-80 flex-col items-center gap-2 rounded-lg">
-      <div className="bg-purple-pink flex h-50 w-full items-start justify-center rounded-lg rounded-b-none">
-        <div className="flex h-full w-full items-center justify-center max-[300px]:hidden">
-          <img src={imageUrl} className="h-full w-full rounded-t-lg object-cover" alt={title} />
+    <div className="flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl">
+      <img src={imageUrl} alt={title} className="h-60 w-full rounded-t-xl object-cover" />
+      <div className="flex flex-grow flex-col justify-between p-6">
+        <div>
+          <h3 className="text-2xl font-semibold text-purple-700">{title}</h3>
+          <p className="mt-2 text-gray-600">{description}</p>
+        </div>
+        <div className="mt-6 pt-2">
+          <button onClick={() => window.open(siteUrl, '_blank')} className="inline-block cursor-pointer rounded-lg bg-purple-600 px-6 py-2 text-white transition hover:bg-purple-700">
+            View Project
+          </button>
         </div>
       </div>
-      <h1 className="text-purple-dark text-m text-center font-bold">{title}</h1>
-      <p className="text-s line-clamp-5 overflow-hidden px-4 text-ellipsis text-black">{description}</p>
     </div>
   );
 }

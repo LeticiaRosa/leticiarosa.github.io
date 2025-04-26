@@ -25,7 +25,7 @@ export function Footer() {
     window.open(url, '_blank');
   };
   return (
-    <footer className="text-purple mt-auto w-full bg-white py-4">
+    <footer className="container-section text-purple w-full bg-white">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:gap-0">
         <div>
           <span className="font-bold whitespace-nowrap">TODOS OS DIREITOS RESERVADOS.</span>
