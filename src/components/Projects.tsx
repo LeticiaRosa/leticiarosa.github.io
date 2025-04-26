@@ -19,7 +19,7 @@ export function Projects() {
   return (
     <section className="container-section bg-background">
       <div className="container flex flex-col gap-4 pt-4">
-        <h1 className="text-purple-dark text-3xl font-bold lg:text-5xl" id="projects">
+        <h1 className="text-purple-dark title-primary" id="projects">
           Projects
         </h1>
         <p className="text-s md:text-m text-black">Here are some of my projects:</p>

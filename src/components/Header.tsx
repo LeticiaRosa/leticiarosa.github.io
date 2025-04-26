@@ -9,7 +9,7 @@ export function Header() {
           <div>
             <Menu />
             <div className="flex flex-col items-start justify-center gap-6 p-4 lg:p-2">
-              <h1 className="text-3xl lg:text-5xl">
+              <h1 className="title-primary">
                 <span id="home" className="whitespace-nowrap">
                   Hello, I'm a{' '}
                 </span>{' '}

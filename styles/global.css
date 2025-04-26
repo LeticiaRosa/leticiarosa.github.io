@@ -66,3 +66,7 @@ body {
 .container {
   @apply mx-auto max-w-250 px-4;
 }
+
+.title-primary {
+  @apply text-3xl font-bold lg:text-5xl;
+}

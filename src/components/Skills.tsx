@@ -16,24 +16,25 @@ export function Skills() {
   return (
     <section className="container-section bg-purple">
       <div className="container">
-        <div className="flex flex-row items-center justify-between gap-2">
-          <h1 className="text-3xl font-bold text-white lg:text-5xl" id="skills">
+        <div className="grid grid-cols-1 items-start gap-2 pt-4">
+          <h1 className="title-primary text-white" id="skills">
             Skills
           </h1>
-        </div>
-        <div className="grid grid-cols-1 items-start justify-center gap-8 sm:grid-cols-3">
-          {skills.map((skill, index) => {
-            return (
-              <div key={index} className="text-s md:text-m p-4 text-white lg:p-2">
-                <p className="font-bold">{skill.title}</p>
-                <ul className="list-disc pl-5">
-                  {skill.items.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
+
+          <div className="grid grid-cols-1 items-start justify-center gap-8 sm:grid-cols-3">
+            {skills.map((skill, index) => {
+              return (
+                <div key={index} className="text-s md:text-m p-4 text-white lg:p-2">
+                  <p className="font-bold">{skill.title}</p>
+                  <ul className="list-disc pl-5">
+                    {skill.items.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
