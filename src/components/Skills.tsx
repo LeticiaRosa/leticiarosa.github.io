@@ -19,7 +19,7 @@ export function Skills() {
             Skills
           </h1>
 
-          <div className="grid max-w-200 grid-cols-1 items-center justify-center min-[320px]:grid-cols-2">
+          <div className="grid max-w-200 grid-cols-1 items-center justify-center min-[320px]:grid-cols-2 min-[720px]:grid-cols-3">
             {skills.map((skill, index) => {
               return (
                 <div key={index} className="text-s md:text-m p-4 text-white lg:p-2">
