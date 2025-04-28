@@ -3,41 +3,29 @@ import { IconCloud } from './magicui/icon-cloud';
 const slugs = [
   'typescript',
   'javascript',
-  'dart',
-  'java',
   'react',
-  'flutter',
-  'android',
   'html5',
   'css3',
   'nodedotjs',
-  'express',
   'nextdotjs',
-  'prisma',
-  'amazonaws',
-  'postgresql',
-  'firebase',
-  'nginx',
-  'vercel',
-  'testinglibrary',
-  'jest',
-  'cypress',
-  'docker',
+  'tailwindcss',
+  'styledcomponents',
   'git',
-  'jira',
   'github',
   'gitlab',
   'visualstudiocode',
-  'androidstudio',
-  'sonarqube',
   'figma',
+  'firebase',
+  'vercel',
+  'amazonaws',
 ];
+
 export function IconCloudDemo() {
-  const images = slugs.map((slug) => `https://cdn.simpleicons.org/${slug}/${slug}`);
+  // Cores personalizadas para melhor contraste
+  const images = slugs.map((slug) => `https://cdn.simpleicons.org/${slug}/6c63ff`); // Usando cor roxa que combina com seu tema
 
   return (
-    // <div className="flex size-full items-center justify-center overflow-hidden
-    <div className={`flex size-full items-center justify-center overflow-hidden max-[720px]:hidden`}>
+    <div className="flex h-[250px] w-[100px] items-center justify-center max-[720px]:hidden">
       <IconCloud images={images} />
     </div>
   );

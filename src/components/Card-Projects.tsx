@@ -7,14 +7,15 @@ interface CardProjectsProps {
   description: string;
   imageUrl: string;
   siteUrl: string;
+  delay?: number;
 }
 
-export function CardProjects({ title, description, imageUrl, siteUrl }: CardProjectsProps) {
+export function CardProjects({ title, description, imageUrl, siteUrl, delay }: CardProjectsProps) {
   useEffect(() => {
     Observer.start();
   }, []);
   return (
-    <div className="intersect:animate-fade-down flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl">
+    <div className={`intersect:animate-fade-down intersect:animate-delay-${delay} flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl`}>
       <img src={imageUrl} alt={title} className="h-30 w-full rounded-t-xl object-scale-down" />
       <div className="flex flex-grow flex-col justify-between p-6 pt-0">
         <div>

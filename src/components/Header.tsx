@@ -18,7 +18,16 @@ export function Header() {
                 <br /> Front-End <br /> Developer
               </SparklesText>
 
-              <Button text="VIEW MY WORK" onClick={() => {}} variants="primary" />
+              <Button
+                text="VIEW MY WORK"
+                onClick={() => {
+                  const element = document.getElementById('projects');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                variants="primary"
+              />
             </div>
           </div>
           <div className="flex w-full items-center justify-center max-[300px]:hidden">

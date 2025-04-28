@@ -8,6 +8,7 @@ export function ContactForm() {
   useEffect(() => {
     Observer.start();
   }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -63,11 +64,34 @@ export function ContactForm() {
             <img src={foguete} className="intersect:animate-fade-up h-auto max-h-40 w-auto object-contain md:max-h-60" alt="Foguete" />
           </div>
           <form onSubmit={handleSubmit} className="flex h-1/2 w-full flex-col gap-4">
-            <input type="text" name="name" placeholder="Full name" value={formData.name} onChange={handleChange} required className="bg-base-card rounded p-2" />
-            <input type="email" name="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required className="bg-base-card rounded p-2" />
-            <textarea name="message" placeholder="Tell me about your idea..." value={formData.message} onChange={handleChange} required className="bg-base-card h-32 rounded p-2"></textarea>
+            <input
+              type="text"
+              name="name"
+              placeholder="Full name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="bg-base-card intersect:animate-fade-right intersect:animate-delay-200 rounded p-2"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="bg-base-card intersect:animate-fade-right intersect:animate-delay-400 rounded p-2"
+            />
+            <textarea
+              name="message"
+              placeholder="Tell me about your idea..."
+              value={formData.message}
+              onChange={handleChange}
+              required
+              className="bg-base-card intersect:animate-fade-right intersect:animate-delay-600 h-32 rounded p-2"
+            ></textarea>
 
-            <div className="flex justify-end">
+            <div className="intersect:animate-fade-right intersect:animate-delay-700 flex justify-end">
               <Button text="LET'S TALK" onClick={() => {}} variants="primary" />
             </div>
             {status && <p className="text-center text-sm">{status}</p>}
