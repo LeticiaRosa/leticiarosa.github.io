@@ -12,17 +12,16 @@ export function Skills() {
     },
   ];
   return (
-    <section className="container-section bg-purple">
+    <section className="container-section">
       <div className="container">
         <div className="grid grid-cols-1 items-start gap-2 pt-4">
-          <h1 className="title-primary text-white" id="skills">
+          <h1 className="title-primary text-purple" id="skills">
             Skills
           </h1>
-
           <div className="grid max-w-200 grid-cols-1 items-center justify-center min-[320px]:grid-cols-2 min-[720px]:grid-cols-3">
             {skills.map((skill, index) => {
               return (
-                <div key={index} className="text-s md:text-m p-4 text-white lg:p-2">
+                <div key={index} className="text-s md:text-m p-4 text-black lg:p-2">
                   <p className="font-bold">{skill.title}</p>
                   <ul className="list-disc pl-5">
                     {skill.items.map((item, index) => (
@@ -32,6 +31,7 @@ export function Skills() {
                 </div>
               );
             })}
+
             <IconCloudDemo />
           </div>
         </div>

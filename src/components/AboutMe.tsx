@@ -9,12 +9,12 @@ export function AboutMe() {
   }, []);
 
   return (
-    <section className="bg-purple-light container-section">
+    <section className="container-section">
       <div className="intersect:animate-fade-right container">
         <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
           <img src={imgMe} alt="My Image" className="max-h-50 max-w-full rounded-full object-contain" />
           <div className="flex flex-col items-start justify-center gap-6">
-            <h1 className="text-purple-dark title-primary" id="about">
+            <h1 className="text-purple title-primary" id="about">
               About Me
             </h1>
             <div className="flex flex-col items-start justify-center gap-4">
