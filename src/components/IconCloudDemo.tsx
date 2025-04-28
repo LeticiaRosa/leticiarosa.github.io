@@ -36,7 +36,8 @@ export function IconCloudDemo() {
   const images = slugs.map((slug) => `https://cdn.simpleicons.org/${slug}/${slug}`);
 
   return (
-    <div className="flex size-full items-center justify-center overflow-hidden">
+    // <div className="flex size-full items-center justify-center overflow-hidden
+    <div className={`flex size-full items-center justify-center overflow-hidden max-[630px]:hidden`}>
       <IconCloud images={images} />
     </div>
   );

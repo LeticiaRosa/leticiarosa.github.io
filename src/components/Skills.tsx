@@ -19,22 +19,20 @@ export function Skills() {
             Skills
           </h1>
 
-          <div className="grid grid-cols-1 items-start justify-center gap-8 sm:grid-cols-2">
+          <div className="grid max-w-200 grid-cols-1 items-center justify-center min-[320px]:grid-cols-2">
+            {skills.map((skill, index) => {
+              return (
+                <div key={index} className="text-s md:text-m p-4 text-white lg:p-2">
+                  <p className="font-bold">{skill.title}</p>
+                  <ul className="list-disc pl-5">
+                    {skill.items.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
             <IconCloudDemo />
-            <div>
-              {skills.map((skill, index) => {
-                return (
-                  <div key={index} className="text-s md:text-m p-4 text-white lg:p-2">
-                    <p className="font-bold">{skill.title}</p>
-                    <ul className="list-disc pl-5">
-                      {skill.items.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>
