@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import imgMe from '../../public/images/ME.png';
+import imgMe from '../../public/images/me.webp';
 import { Observer } from 'tailwindcss-intersect';
 
 Observer.start();
@@ -12,7 +12,7 @@ export function AboutMe() {
     <section className="container-section">
       <div className="intersect:animate-fade-right container">
         <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
-          <img src={imgMe} alt="My Image" className="max-h-50 max-w-full rounded-full object-contain" />
+          <img src={imgMe} alt="My Image" className="h-auto max-h-50 w-auto max-w-full rounded-full object-contain" />
           <div className="flex flex-col items-start justify-center gap-6">
             <h1 className="text-purple title-primary" id="about">
               About Me

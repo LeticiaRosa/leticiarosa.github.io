@@ -1,4 +1,4 @@
-import foguete from '../../public/images/foguete.png';
+import foguete from '../../public/images/foguete.webp';
 import { Button } from './Button';
 import { Menu } from './Menu';
 import { SparklesText } from '@/components/magicui/sparkles-text';

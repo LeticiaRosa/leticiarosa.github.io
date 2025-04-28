@@ -1,4 +1,4 @@
-import foguete from '../../public/images/foguete.png';
+import foguete from '../../public/images/foguete.webp';
 import { useEffect, useState } from 'react';
 import { Button } from './Button';
 import { SparklesText } from './magicui/sparkles-text';

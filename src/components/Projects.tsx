@@ -11,7 +11,7 @@ export function Projects() {
     {
       title: 'Wedding Website',
       description: 'Site for my wedding, allowing guests to make contributions via Pix, credit, boleto and debit.',
-      imageUrl: '/images/casamento.png',
+      imageUrl: '/images/casamento.webp',
       siteUrl: 'https://leticia-gabriel.netlify.app/',
     },
     {
