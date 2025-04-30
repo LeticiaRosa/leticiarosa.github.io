@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# 🌌 Letícia Rosa | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo(a) ao repositório do meu portfólio profissional, desenvolvido com muito carinho e foco na minha identidade pessoal: universo, frontend moderno e impacto humano através da tecnologia. 🚀💜
 
-Currently, two official plugins are available:
+### 📍 Acesse online:
+👉 [leticiarosa.github.io](https://leticiarosa.github.io/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Sobre mim
 
-## Expanding the ESLint configuration
+Sou desenvolvedora Front-End com mais de 3 anos de experiência, apaixonada por transformar ideias em interfaces acessíveis, modernas e funcionais.  
+Atualmente, atuo na **Prodabel**, desenvolvendo sistemas e soluções de BI para a Prefeitura de Belo Horizonte.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👩‍💻 Tecnologias favoritas: **React, TypeScript, TailwindCSS, Vite**  
+🎓 Pós-graduanda em Front-End Engineer pela **FIAP**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+## 🧩 Sobre este projeto
+
+Este site foi construído com:
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MagicUI + Framer Motion](https://www.framer.com/motion/) para animações ✨
+
+### Principais seções:
+- **About me**
+- **Skills**
+- **Projetos com preview**
+
+## 🛠️ Como rodar localmente
+
+```bash
+git clone https://github.com/LeticiaRosa/leticiarosa.github.io
+cd leticiarosa.github.io
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📬 Contato
+📧 E-mail: leticiarosa@gmail.com
+💼 LinkedIn
+💻 Portfolio Live
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+⭐ Se gostou, deixe uma ⭐ aqui no repositório!
