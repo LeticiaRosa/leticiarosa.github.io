@@ -21,11 +21,6 @@ Este site foi construído com:
 - [Tailwind CSS](https://tailwindcss.com/)
 - [MagicUI + Framer Motion](https://www.framer.com/motion/) para animações ✨
 
-### Principais seções:
-- **About me**
-- **Skills**
-- **Projetos com preview**
-
 ## 🛠️ Como rodar localmente
 
 ```bash
