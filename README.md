@@ -32,7 +32,13 @@ npm run dev
 
 ## 📬 Contato
 📧 E-mail: leticiarosa@gmail.com
-💼 LinkedIn
-💻 Portfolio Live
 
-⭐ Se gostou, deixe uma ⭐ aqui no repositório!
+💼 [LinkedIn](www.linkedin.com/in/leticia-rosa-oliveira-miranda)
+
+
+💻 [Portfolio](https://leticiarosa.github.io/)
+
+
+
+⭐ Se gostou, deixe uma ⭐ aqui no repositório! 
+Abraços 🌌
